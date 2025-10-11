@@ -9,6 +9,10 @@ DEVICE_PATH := device/xiaomi/nuwa
 # Inherit from xiaomi sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 3200
+TARGET_SCREEN_WIDTH := 1440
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
