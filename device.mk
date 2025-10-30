@@ -20,6 +20,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/xiaomi/GoogleCamera/config.mk) 
+
+# Inherit Basic Call Recorder
+$(call inherit-product, vendor/xiaomi/bcr/bcr.mk)
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.nuwa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nuwa.rc \
