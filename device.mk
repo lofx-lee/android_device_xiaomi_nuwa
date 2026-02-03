@@ -18,6 +18,14 @@ $(call inherit-product, vendor/xiaomi/bcr/bcr.mk)
 TARGET_SCREEN_HEIGHT := 3200
 TARGET_SCREEN_WIDTH := 1440
 
+# NexusLauncherOverlay
+PRODUCT_PACKAGES += \
+    NexusLauncherOverlay
+
+# OverlayNexusLauncher
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+    
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml \
