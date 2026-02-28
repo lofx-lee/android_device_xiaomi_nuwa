@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/nuwa/device.mk)
 # Inherit some common halcyon stuff.
 $(call inherit-product, vendor/halcyon/config/common.mk)
 
+# Inherit GMS.
+WITH_GMS := true
+
 PRODUCT_NAME := halcyon_nuwa
 PRODUCT_DEVICE := nuwa
 PRODUCT_MANUFACTURER := Xiaomi
