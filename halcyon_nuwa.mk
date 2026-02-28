@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from nuwa device
 $(call inherit-product, device/xiaomi/nuwa/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common halcyon stuff.
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
-PRODUCT_NAME := lineage_nuwa
+PRODUCT_NAME := halcyon_nuwa
 PRODUCT_DEVICE := nuwa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
