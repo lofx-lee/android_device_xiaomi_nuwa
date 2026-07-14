@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/nuwa
 # Inherit from xiaomi sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
+# Vendor MiuiCamera
+-include device/xiaomi/nuwa-miuicamera/BoardConfig.mk
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
