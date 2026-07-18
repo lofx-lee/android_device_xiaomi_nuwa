@@ -663,7 +663,7 @@ odm/lib64/com.xiaomi.camhal.overlap.so
 odm/lib64/com.xiaomi.camhal.submodel.camxfrag.so
 odm/lib64/com.xiaomi.camhal.submodel.chifrag.so
 odm/lib64/hw/camera.qcom.so
-odm/lib64/hw/camera.xiaomi.so
+odm/lib64/hw/camera.xiaomi.so;DISABLE_CHECKELF
 odm/lib64/hw/com.qti.chi.offline.so
 odm/lib64/hw/com.qti.chi.override.so
 odm/lib64/libAF.so
